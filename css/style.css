@@ -1,0 +1,38 @@
+.container.demo{
+	background: #0056B3;
+	height: 100vh;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+}
+
+.container.demo .row{
+	background: #021d51;
+	border-bottom: 1px solid #000000;
+	height: 30vh;
+}
+
+.container.demo .row > div > span{
+	display: block;
+	background: #487bdd;
+	color: white;
+	font-size: 32px;
+	padding: 8px;
+	border: 1px solid #021d51;
+}
+
+.component.demo{
+	padding: 50px;
+}
+
+/*旋转木马固定高度*/
+.carousel.demo .carousel-item{
+	height: 300px;
+}
+/*旋转木马图片固定高度 和等比例缩放，*/
+.carousel.demo .carousel-item img{
+	min-height: 300px;
+	max-height: 400px;
+	object-fit: cover;
+}
+
+
