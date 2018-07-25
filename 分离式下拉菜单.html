@@ -13,27 +13,21 @@
   </head>
   <body>
 	<div class="component demo">
-		
-		<div class="row">
-			<div class="col-4">
-						<div class="list-group">
-						<a data-toggle="list" href="#html-content" class="list-group-item list-group-item-action">HTML</a>
-						<a data-toggle="list" href="#css--content" class="list-group-item list-group-item-action">CSS</a>
-						<a data-toggle="list" href="#jacascript-content" class="list-group-item list-group-item-action">JavaScript</a>
-						</div>
-			</div>
-			<div class="col-8">
-						<div class="tab-content">
-							<!--show active 默认显示分标签-->
-							<div class="tab-pane fade show active" id="html-content">Hello html</div>
-							<div class="tab-pane fade" id="css--content">Hello css</div>
-							<div class="tab-pane fade" id="jacascript-content">Hello JavaScript</div>
-						</div>
+		<div class="btn-group">
+			
+			<a href="#" class="btn btn-success">Dropdown</a>
+			<button class="btn btn-success dropdown-toggle dropdown-toggle-split" 
+				data-toggle = "dropdown"><span class="sr-only">Toggle Dropdown</span></button>
+			
+			<div class="dropdown-menu">
+				<div class="dropdown-header">Web language</div>
+				<a href="#" class="dropdown-item">HTML</a>
+				<a href="#" class="dropdown-item">CSS</a>
+				<a href="#" class="dropdown-item">JavaScript</a>
+				<div class="dropdown-divider"></div>
+				<a href="#" class="dropdown-item">More</a>
 			</div>
 		</div>
-
-
-		
 	</div>
     
     <!-- Optional JavaScript -->
