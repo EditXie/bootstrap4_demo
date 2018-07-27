@@ -91,4 +91,10 @@ $(document).ready(() => {
 	$('#modal-demo').on('hidden.bs.modal', function() {
 		console.log('hidden')
 	})
+	
+	// 提示信息
+	$('[data-toggle="popover"]').popover()
+	
+	// 鼠标易至按钮工具提示 
+	$('[data-toggle="tooltip"]').tooltip()
 })

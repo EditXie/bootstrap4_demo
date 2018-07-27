@@ -12,13 +12,15 @@
     <title>Hello, world!</title>
   </head>
   <body>
-	<div class="component demo" style="height: 300vh;">
-
+	<div class="component demo">
+		<!-- data-trigger="focus" 任意地方点击隐藏提示信息 data-placement="bottom"显示位置-->
 		<button class="btn btn-primary"
-			data-toggle="tooltip"
-			title="hello~~"
-			data-placement="right">
-			Tooltip</button>
+			data-toggle="popover"
+			title="提示标题"
+			data-content="这是提示的内容"
+			data-placement="bottom"
+			data-trigger="focus" 
+			>Pop</button>
 
 	</div>
     
