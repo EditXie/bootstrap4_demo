@@ -13,19 +13,26 @@
   </head>
   <body>
 	<div class="component demo">
-		<!--flex-column 垂直排列 justify-content-center 居中对齐 end 右对齐 nav-fill 全行平均 nav-justified 标签对等-->
-		<ul class="nav nav-pills nav-fill">
-			<li class="nav-item">
-				<a href="" class="nav-link active">HTML</a>
-			</li>
-			<li class="nav-item">
-				<a href="" class="nav-link">CSS</a>
-			</li>
-			<li class="nav-item">
-				<a href="" class="nav-link">JavaScript</a>
-			</li>
-		</ul>
-		
+		<!--对话框默认隐藏，显示对话框 div添加d-block'; data-backdrop="false" 关闭对话框背景色-->
+		<div class="modal fade show" id="modal-demo" data-backdrop="false" >
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Modal</h5>
+						<button class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+						<p>hello~~!</p>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-secondary" data-dismiss="modal">取消</button>
+						<button class="btn btn-primary" >确认</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<button class="btn btn-danger" data-toggle="modal" data-target="#modal-demo">显示</button>
+	
 	</div>
     
     <!-- Optional JavaScript -->

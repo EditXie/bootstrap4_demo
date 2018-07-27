@@ -57,4 +57,38 @@ $(document).ready(() => {
 	$('#dropdown-demo').on('hidden.bs.dropdown', () => {
 		console.log('hidden')
 	})
+	
+	// js切换标签 方法和事件
+	const list = $('#tab-demo .list-group a')
+	list.click(function (event) {
+		event.preventDefault()
+		$(this).tab('show')
+	})
+	
+	list.on('show.bs.tab', function (event) {
+		console.log(`开始显示: ${ event.target.getAttribute('href') }'`)
+	})
+	list.on('shown.bs.tab', function (event) {
+		console.log(`完全显示: ${ event.target.getAttribute('href') }`)
+	})
+	list.on('hide.bs.tab', function (event) {
+		console.log(`开始隐藏: ${ event.target.getAttribute('href') }`)
+	})
+	list.on('hidden.bs.tab', function (event) {
+		console.log(`完全隐藏: ${ event.target.getAttribute('href') }`)
+	})
+	
+	// 对话框的选项，方法与事件
+	$('#modal-demo').on('show.bs.modal', function() {
+		console.log('show')
+	})
+	$('#modal-demo').on('shown.bs.modal', function() {
+		console.log('shown')
+	})
+	$('#modal-demo').on('hide.bs.modal', function() {
+		console.log('hide')
+	})
+	$('#modal-demo').on('hidden.bs.modal', function() {
+		console.log('hidden')
+	})
 })
